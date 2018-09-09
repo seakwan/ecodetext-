@@ -1,0 +1,69 @@
+{
+    "name": "encodetxt",
+    "displayName": "encodetxt",
+    "description": "encodetxt",
+    "version": "0.0.1",
+    "publisher": "hhj",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.urlEncode",
+        "onCommand:extension.urlDecode",
+        "onCommand:extension.htmlEncode",
+        "onCommand:extension.htmlEncode",
+        "onCommand:extension.toBase64",
+        "onCommand:extension.fromBase64",
+        "onCommand:extension.showResult"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.urlEncode",
+                "title": "urlEncode",
+                "category": "Encode"
+            },
+            {
+                "command": "extension.urlDecode",
+                "title": "urlDecode",
+                "category": "Encode"
+            },
+            {
+                "command": "extension.htmlEncode",
+                "title": "htmlEncode",
+                "category": "Encode"
+            },
+            {
+                "command": "extension.htmlDecode",
+                "title": "htmlDecode",
+                "category": "Encode"
+            },
+            {
+                "command": "extension.toBase64",
+                "title": "toBase64",
+                "category": "Encode"
+            },
+            {
+                "command": "extension.fromBase64",
+                "title": "fromBase64",
+                "category": "Encode"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "eslint": "^3.6.0",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
