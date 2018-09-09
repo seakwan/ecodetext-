@@ -1,1 +1,7 @@
-# Welcome to your first VS Code Extension
+vscode extensions 
+urlEncode
+urlDecode
+htmlEncode
+htmlDecode
+toBase64
+fromBase64
